@@ -1,9 +1,9 @@
-**Kind Installation Guide for Windows**
+                                   **Kind Installation Guide for Windows**
 
 *Step 1*: Install kubectl
 kubectl is the Kubernetes command-line tool that lets you interact with Kubernetes clusters. Install it by following these steps:
 
-Download the latest release from this link.
+Download the latest release from this link. https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
 Add the binary in to your PATH.
 
@@ -19,7 +19,7 @@ curl.exe -Lo kind-windows-amd64.exe https://kind.sigs.k8s.io/dl/v0.11.1/kind-win
 
 mkdir c:/kind
 
-*Step3*:
+*Step* 3:
 
 Move-Item .\kind-windows-amd64.exe c:\kind\kind.exe
 
@@ -31,14 +31,14 @@ Create a Kubernetes cluster by running:
 kind create cluster
 This command creates a default cluster named "kind".
 
-*Step 5*: Verify the Installation
+*Step* 5: Verify the Installation
 To verify your installation, check if the cluster is up and running:
 
 kubectl cluster-info
 
 You should see the cluster information and status.
 
-*Step 6*: Create a pod
+*Step* 6: Create a pod
 
 kubectl run nginx --image=nginx:latest
 
